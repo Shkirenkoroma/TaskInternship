@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__content">
+        <header class="header">
+          <nav class="header__navigate">
+            <span class="header__burgermenu"></span>
+          </nav>
+        </header>
+        <main class="main">
+          <section class="first-block">
+            <div class="about-yourself">
+              <div class="about-yourself__title">
+                <b>Меня зовут Александра Смит</b>
+              </div>
+              <div class="about-yourself__subtitle">
+                <b>Я web-разработчик из города Москва</b>
+              </div>
+              <div class="about-yourself__buttongroup">
+                <button class="about-yourself__button"><b>Портфолио</b></button>
+                <button class="about-yourself__button"><b>Про меня</b></button>
+              </div>
+            </div>
+            <aside class="first-block__aside">
+              <div class="aside-menu">
+                <img
+                  class="aside-menu__cancel"
+                  src="./img/Close.png"
+                  alt="cancel icon from aside menu"
+                />
+                <ul class="aside-menu__navigate">
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">ПРО МЕНЯ</span>
+                  </li>
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">МОЙ ОПЫТ</span>
+                  </li>
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">МОИ НАВЫКИ</span>
+                  </li>
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">МОИ РАБОТЫ</span>
+                  </li>
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">ПРАЙС-ЛИСТ</span>
+                  </li>
+                  <li class="aside-menu__link">
+                    <span class="aside-menu__cicle"></span>
+                    <span class="aside-menu__text">КОНТАКТЫ</span>
+                  </li>
+                </ul>
+                <ul class="aside-menu__socialnetworks">
+                  <li class="aside-menu__networkicon">
+                    <a href="https://github.com/">
+                      <img src="./img/Github.png" alt="github icon page" />
+                    </a>
+                  </li>
+                  <li class="aside-menu__networkicon">
+                    <a href="https://www.instagram.com/">
+                      <img
+                        src="./img/Instagram.png"
+                        alt="instagram icon page"
+                      />
+                    </a>
+                  </li>
+                  <li class="aside-menu__networkicon">
+                    <a href="https://ru-ru.facebook.com/">
+                      <img src="./img/Facebook.png" alt="facebook icon page" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social-links">
+                <span class="social-links__text"><b>Социальные сети</b></span>
+                <span class="social-links__dash"></span>
+                <ul class="social-links__list">
+                  <li class="social-links__item">
+                    <a href="https://github.com/">
+                      <img
+                        class="social-links__image"
+                        src="./img/Github.png"
+                        alt="github page"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a href="https://www.instagram.com/">
+                      <img
+                        class="social-links__image"
+                        src="./img/Instagram.png"
+                        alt="instagram page"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-links__item">
+                    <a href="https://ru-ru.facebook.com/">
+                      <img
+                        class="social-links__image"
+                        src="./img/Facebook.png"
+                        alt="facebook page"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </section>
+          <section class="second-block"></section>
+          <section class="third-block"></section>
+        </main>
+        <footer class="footer"></footer>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>

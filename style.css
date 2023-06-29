@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  background-color: grey;
+}
+
+.container__content {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.header {
+}
+
+.header__navigate {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  float: right;
+  height: 40px;
+}
+
+.header__navigate:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 500ms;
+}
+
+.header__burgermenu {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background-color: #000;
+}
+
+.header__burgermenu.activate {
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: #000;
+  transition: all 500ms;
+}
+
+.header__burgermenu.activate:before {
+  display: block;
+  height: 3px;
+  width: 60px;
+  background-color: #000;
+  transition: all 500ms;
+}
+
+.header__burgermenu.activate:after {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background-color: #000;
+  transition: all 500ms;
+}
+
+.header__burgermenu:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #000;
+}
+
+.header__burgermenu:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+}
+
+.first-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 27% 33% 33%;
+  width: 100%;
+  max-width: 1920px;
+  height: 800px;
+  background-image: url('./img/backgroundfirst.jpg');
+}
+
+.about-yourself {
+  position: relative;
+  width: 100%;
+  max-width: 532px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.about-yourself__title {
+  position: relative;
+  font-size: 22px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.about-yourself__title:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffa501;
+  border-radius: 50%;
+}
+
+.about-yourself__subtitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+.about-yourself__button {
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.about-yourself__button:hover {
+  background-color: #ffa501;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 700ms;
+}
+
+.social-links {
+  display: flex;
+  transform: rotate(270deg);
+  margin-top: 345px;
+  float: left;
+  margin-left: -90px;
+}
+
+.social-links.hidden {
+  display: none;
+}
+
+.social-links__dash {
+  position: relative;
+  top: 9px;
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 0 15px;
+  background-color: #000;
+}
+
+.social-links__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links__item {
+  margin-right: 10px;
+}
+
+.social-links__item:hover {
+  transform: scale(1.2);
+  transition: all 500ms;
+}
+
+.aside-menu {
+  display: none;
+}
+
+.aside-menu__navigate {
+  list-style-type: none;
+  width: 100%;
+}
+
+.aside-menu__link {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.aside-menu__cicle {
+  margin-right: 25px;
+}
+
+.aside-menu__socialnetworks {
+  list-style-type: none;
+}
+
+.aside-menu__text {
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.aside-menu__cicle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 25px;
+}
+
+.aside-menu__text:hover {
+  cursor: pointer;
+  color: #000;
+  transition: all 500ms;
+}
+.aside-menu.activate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 345px;
+  height: 800px;
+  background-color: #ffa501;
+}
+
+.aside-menu__cancel {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.aside-menu__cancel:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.aside-menu__socialnetworks {
+  display: flex;
+}
+
+.aside-menu__networkicon {
+  margin-right: 15px;
+}
+
+.aside-menu__networkicon:hover {
+  transform: scale(1.1);
+  transition: all 500ms;
+}
