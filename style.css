@@ -6,6 +6,8 @@
 .container {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
+  min-height: calc(100vh - 5px);
 }
 
 .container__content {
@@ -203,6 +205,7 @@
 
 .aside-menu {
   transform: translateX(-400px);
+  visibility: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -258,6 +261,7 @@
 
 .aside-menu.activate {
   transform: translateX(0);
+  visibility: visible;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -438,4 +442,102 @@
   left: 445px;
   border-radius: 50%;
   background-color: #ffa501;
+}
+.third-block {
+  margin-top: 50px;
+  height: 640px;
+  width: 100%;
+  max-width: 1055px;
+  border: 1px solid #cdcdcd;
+  margin: 0 auto;
+}
+
+.contact-data {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  height: 600px;
+  gap: 100px;
+}
+
+.contact-data__photopreview {
+  background-image: url('./img/Photo.png');
+}
+
+.contact-data__title {
+  font-size: 18px;
+}
+.contact-data__subtitle {
+  margin-top: 10px;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.contact-data__underline {
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  background-color: #ffa501;
+}
+
+.contact-data__text {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.contact-data__socialnetworks {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+}
+
+.contact-data__link {
+  margin-right: 20px;
+}
+
+.contact-data__link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 250ms;
+}
+.contact-data__inputgroup {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.contact-data__input {
+  width: 100%;
+  max-width: 280px;
+  height: 45px;
+  margin-right: 25px;
+  outline: none;
+  font-size: 20px;
+}
+
+.contact-data__textarea {
+  width: 100%;
+  max-width: 585px;
+  height: 190px;
+  outline: none;
+  font-size: 20px;
+}
+
+.contact-data__sendform {
+  width: 100%;
+  max-width: 219px;
+  height: 45px;
+  border: none;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  border: 1px solid #ffa501;
+  background-color: #fff;
+  background-image: linear-gradient(60deg, #ffa501 50%, transparent 60%);
+  background-position: 100%;
+  background-size: 400%;
+}
+
+.contact-data__sendform:hover {
+  background-position: 10%;
+  transition: all 700ms;
+  cursor: pointer;
 }
