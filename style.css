@@ -6,7 +6,6 @@
 .container {
   width: 100%;
   max-width: 1920px;
-  background-color: grey;
 }
 
 .container__content {
@@ -14,7 +13,6 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: red;
 }
 
 .header {
@@ -40,6 +38,7 @@
   height: 3px;
   width: 50px;
   background-color: #000;
+  transition: all 500ms;
 }
 
 .header__burgermenu.activate {
@@ -75,6 +74,7 @@
   width: 50px;
   height: 3px;
   background-color: #000;
+  transition: all 500ms;
 }
 
 .header__burgermenu:after {
@@ -86,6 +86,7 @@
   width: 60px;
   height: 3px;
   background-color: #000;
+  transition: all 500ms;
 }
 
 .first-block {
@@ -96,6 +97,18 @@
   max-width: 1920px;
   height: 800px;
   background-image: url('./img/backgroundfirst.jpg');
+}
+
+.first-block.bluring {
+  filter: blur(10px);
+  transition: all 500ms;
+}
+
+.first-block__aside {
+  position: absolute;
+  z-index: 1000;
+  max-width: 345px;
+  width: 100%;
 }
 
 .about-yourself {
@@ -112,6 +125,7 @@
   margin-bottom: 20px;
   z-index: 1;
 }
+
 .about-yourself__title:before {
   content: '';
   z-index: -1;
@@ -146,15 +160,19 @@
 }
 
 .social-links {
+  position: absolute;
+  top: 0;
   display: flex;
   transform: rotate(270deg);
   margin-top: 345px;
   float: left;
   margin-left: -90px;
+  transition: all 700ms;
 }
 
 .social-links.hidden {
-  display: none;
+  opacity: 0;
+  transition: all 200ms;
 }
 
 .social-links__dash {
@@ -184,7 +202,17 @@
 }
 
 .aside-menu {
-  display: none;
+  transform: translateX(-400px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 345px;
+  height: 800px;
+  background-color: #ffa501;
+  transition: all 500ms;
 }
 
 .aside-menu__navigate {
@@ -227,7 +255,9 @@
   color: #000;
   transition: all 500ms;
 }
+
 .aside-menu.activate {
+  transform: translateX(0);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -237,6 +267,7 @@
   max-width: 345px;
   height: 800px;
   background-color: #ffa501;
+  transition: all 500ms;
 }
 
 .aside-menu__cancel {
