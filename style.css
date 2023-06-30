@@ -614,18 +614,140 @@ label#contact-data__message {
 }
 
 @media (max-width: 1750px) {
+  .first-block {
+    grid-template-columns: 20% 60% 20%;
+  }
   .about-yourself__subtitle {
     font-size: 44px;
   }
 }
-@media (max-width: 920px) {
+
+@media (max-width: 992px) {
+  .aboutpreview-mobile{
+    width: 385px;
+    height: 480px;
+    background-image:url('./img/Photo.png');
+    margin: 0 auto;
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+  }
+  .contact-data__photopreview {
+    display: none;
+  }
   .about-yourself__subtitle {
     font-size: 44px;
   }
+
+  .usefull-skills {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .usefull-skills__education {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .usefull-skills__experience {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 75px 0 60px;
+  }
+
+  .contact-data__messagefield {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .usefull-skills__title {
     font-size: 20px;
   }
+
   .usefull-skills__titlework {
     font-size: 20px;
+  }
+
+  .third-block {
+    margin: 400px auto;
+  }
+
+  .contact-data {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .usefull-skills__education {
+    max-width: 400px;
+  }
+  .usefull-skills__experience {
+    max-width: 400px;
+  }
+  .contact-data__messagefield {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-links {
+    display: none;
+  }
+  .about-yourself__title {
+    font-size: 16px;
+  }
+  .about-yourself__subtitle {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .usefull-skills__education {
+    max-width: 250px;
+  }
+  .usefull-skills__experience {
+    max-width: 250px;
+  }
+  .third-block {
+    margin: 625px auto;
+  }
+  .contact-data__messagefield {
+    max-width: 300px;
+  }
+  .usefull-skills__learningtime {
+    font-size: 11px;
+  }
+  label#contact-data__mail {
+    right: 188px;
+    top: 70px;
+  }
+  .contact-data__inputgroup {
+    flex-direction: column;
+    align-items: center;
+  }
+  input#first-name {
+    margin-bottom: 30px;
+  }
+  .contact-data__inbox.email {
+    margin: 0;
+  }
+
+  .contact-data__textarea {
+    max-width: 268px;
+    padding: 0;
+    margin-left: 7px;
+  }
+  .contact-data__sendform {
+    margin-left: 28px;
+  }
+  .contact-data__inbox.error{
+    margin-bottom: 20px;
+  }
+  label#contact-data__errormessage{
+    left: 6px;
+    top: 357px
+}
   }
 }
