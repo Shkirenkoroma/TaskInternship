@@ -626,12 +626,11 @@ label#contact-data__message {
   .aboutpreview-mobile{
     width: 385px;
     height: 480px;
+    margin: 50px auto;
     background-image:url('./img/Photo.png');
-    margin: 0 auto;
     background-position: center;
     background-position: center;
     background-size: cover;
-    margin-top: 50px;
   }
   .contact-data__photopreview {
     display: none;
@@ -651,15 +650,15 @@ label#contact-data__message {
   }
 
   .usefull-skills__experience {
-    max-width: 600px;
     width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 75px 0 60px;
   }
 
   .contact-data__messagefield {
-    max-width: 600px;
     width: 100%;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -720,8 +719,8 @@ label#contact-data__message {
     font-size: 11px;
   }
   label#contact-data__mail {
-    right: 188px;
     top: 70px;
+    right: 188px;
   }
   .contact-data__inputgroup {
     flex-direction: column;
@@ -746,8 +745,8 @@ label#contact-data__message {
     margin-bottom: 20px;
   }
   label#contact-data__errormessage{
-    left: 6px;
     top: 357px
+    left: 6px;
 }
   }
 }
