@@ -462,7 +462,7 @@
 .contact-data__photopreview {
   background-image: url('./img/Photo.png');
   background-position: center;
-    background-size: cover;
+  background-size: cover;
 }
 
 .contact-data__title {
@@ -539,11 +539,12 @@
 
 .contact-data__textarea {
   width: 100%;
-  max-width: 585px;
+  max-width: 580px;
   height: 190px;
   outline: none;
   font-size: 20px;
   padding-top: 10px;
+  padding-left: 10px;
 }
 
 .contact-data__sendform {
@@ -566,6 +567,10 @@
   cursor: pointer;
 }
 
+#form {
+  position: relative;
+}
+
 label#contact-data__name {
   position: absolute;
   background-color: #fff;
@@ -578,7 +583,7 @@ label#contact-data__mail {
   position: absolute;
   background-color: #fff;
   top: -9px;
-  right: 212px;
+  right: 200px;
   padding: 0 8px;
 }
 
@@ -590,22 +595,26 @@ label#contact-data__message {
   padding: 0 8px;
 }
 
-.error{
-  /* border:4px solid red; */
+.error {
   width: 100%;
-    max-width: 272px;
-    height: 47px;
-overflow:hidden;
-    outline:4px solid red;
-outline-offset:-4px;
+  max-width: 272px;
+  height: 47px;
+  overflow: hidden;
+  outline: 4px solid red;
+  outline-offset: -4px;
 }
 
-.error-label{
-  display:block;
-  color:red;
-  margin-bottom:20px;
-
+.error-label {
+  display: block;
+  color: red;
+  margin-bottom: 20px;
   position: absolute;
-    top: 47px;
+  top: 47px;
 }
+
+#contact-data__errormessage {
+  display: none;
+  color: red;
+  top: 280px;
+  position: absolute;
 }

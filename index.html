@@ -225,16 +225,17 @@
                     <input class="contact-data__input" name="first-name" type="text" maxlength="24" >
 
                    </div>
-                <div class="contact-data__inbox">
+                <div class="contact-data__inbox email">
 
                   <label for="email" id="contact-data__mail" >Ваша почта</label>
-                  <input class="contact-data__input" name="email" type="text" maxlength="35" >
+                  <input id="validateEmail" class="contact-data__input " name="email" type="text" maxlength="35" >
                 </div>
                  
                 </div>
                 <label id="contact-data__message">Ваше сообщение</label>
-                  <textarea class="contact-data__textarea" ></textarea>
-                  <button type="submit" class="contact-data__sendform"><b>Отправить сообщение</b></button>
+                <textarea class="contact-data__textarea" ></textarea><br>
+                <label id="contact-data__errormessage">Поле не заполнено!</label>
+                <button type="submit" class="contact-data__sendform"><b>Отправить сообщение</b></button>
                 </form>
                 </div>
             </div>
