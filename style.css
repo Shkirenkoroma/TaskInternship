@@ -99,6 +99,8 @@
   max-width: 1920px;
   height: 800px;
   background-image: url('./img/backgroundfirst.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .first-block.bluring {
