@@ -461,11 +461,29 @@
 
 .contact-data__photopreview {
   background-image: url('./img/Photo.png');
+  background-position: center;
+    background-size: cover;
 }
 
 .contact-data__title {
   font-size: 18px;
+  z-index: 1;
+  margin-top: 5px;
 }
+
+.contact-data__title:before {
+  content: '';
+  display: block;
+  position: relative;
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffa501;
+  top: 25px;
+  right: 10px;
+}
+
 .contact-data__subtitle {
   margin-top: 10px;
   font-size: 34px;
@@ -487,7 +505,6 @@
 .contact-data__socialnetworks {
   list-style-type: none;
   padding: 0;
-  margin-top: 20px;
   display: flex;
 }
 
@@ -502,16 +519,22 @@
 }
 .contact-data__inputgroup {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contact-data__inbox:not(:first-child) {
+  margin-left: 40px;
 }
 
 .contact-data__input {
   width: 100%;
-  max-width: 280px;
+  max-width: 253px;
   height: 45px;
   margin-right: 25px;
   outline: none;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 .contact-data__textarea {
@@ -520,6 +543,7 @@
   height: 190px;
   outline: none;
   font-size: 20px;
+  padding-top: 10px;
 }
 
 .contact-data__sendform {
@@ -538,6 +562,50 @@
 
 .contact-data__sendform:hover {
   background-position: 10%;
-  transition: all 700ms;
+  transition: all 800ms;
   cursor: pointer;
+}
+
+label#contact-data__name {
+  position: absolute;
+  background-color: #fff;
+  top: -9px;
+  left: 15px;
+  padding: 0 8px;
+}
+
+label#contact-data__mail {
+  position: absolute;
+  background-color: #fff;
+  top: -9px;
+  right: 212px;
+  padding: 0 8px;
+}
+
+label#contact-data__message {
+  position: relative;
+  background-color: #fff;
+  top: 8px;
+  right: -15px;
+  padding: 0 8px;
+}
+
+.error{
+  /* border:4px solid red; */
+  width: 100%;
+    max-width: 272px;
+    height: 47px;
+overflow:hidden;
+    outline:4px solid red;
+outline-offset:-4px;
+}
+
+.error-label{
+  display:block;
+  color:red;
+  margin-bottom:20px;
+
+  position: absolute;
+    top: 47px;
+}
 }

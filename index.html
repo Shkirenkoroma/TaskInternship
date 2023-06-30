@@ -218,12 +218,24 @@
                     <li class="contact-data__link"><a href="https://www.instagram.com/"><img src="./img/Inst.png" alt="instagram page"></a></li>
                   </ul>
                  <b><span class="contact-data__text">Или оставьте ваши данные и я сама вам напишу:</span></b><br>
+                 <form id="form">
                  <div class="contact-data__inputgroup">
-                  <input class="contact-data__input" type="text">
-                  <input class="contact-data__input" type="text">
-                 </div>
-                  <textarea class="contact-data__textarea"></textarea>
-                  <button class="contact-data__sendform"><b>Отправить сообщение</b></button>
+                   <div class="contact-data__inbox">
+                    <label for="first-name" id="contact-data__name">Ваше имя</label>
+                    <input class="contact-data__input" name="first-name" type="text" maxlength="24" >
+
+                   </div>
+                <div class="contact-data__inbox">
+
+                  <label for="email" id="contact-data__mail" >Ваша почта</label>
+                  <input class="contact-data__input" name="email" type="text" maxlength="35" >
+                </div>
+                 
+                </div>
+                <label id="contact-data__message">Ваше сообщение</label>
+                  <textarea class="contact-data__textarea" ></textarea>
+                  <button type="submit" class="contact-data__sendform"><b>Отправить сообщение</b></button>
+                </form>
                 </div>
             </div>
           </section>
@@ -231,6 +243,7 @@
         <footer class="footer"></footer>
       </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
