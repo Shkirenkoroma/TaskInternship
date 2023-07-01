@@ -339,6 +339,7 @@
 .usefull-skills__iconsblock {
   position: relative;
 }
+
 .usefull-skills__iconsblock:before {
   content: '';
   position: absolute;
@@ -364,6 +365,7 @@
   top: 13px;
   left: 17px;
 }
+
 .usefull-skills {
   display: flex;
   margin-top: 55px;
@@ -375,6 +377,7 @@
   align-items: flex-start;
   margin-bottom: 50px;
 }
+
 .usefull-skills__row {
   display: flex;
   margin-bottom: 20px;
@@ -398,6 +401,7 @@
   border-left: 2px solid #000;
   text-align-last: justify;
 }
+
 .usefull-skills__experience {
   padding: 0 0 0 60px;
   border-left: 2px solid #000;
@@ -439,6 +443,7 @@
   border-radius: 50%;
   background-color: #ffa501;
 }
+
 .third-block {
   width: 100%;
   max-width: 1055px;
@@ -632,9 +637,11 @@ label#contact-data__message {
     background-position: center;
     background-size: cover;
   }
+
   .contact-data__photopreview {
     display: none;
   }
+
   .about-yourself__subtitle {
     font-size: 44px;
   }
@@ -643,6 +650,7 @@ label#contact-data__message {
     flex-direction: column;
     gap: 80px;
   }
+
   .usefull-skills__education {
     max-width: 600px;
     width: 100%;
@@ -683,9 +691,11 @@ label#contact-data__message {
   .usefull-skills__education {
     max-width: 400px;
   }
+
   .usefull-skills__experience {
     max-width: 400px;
   }
+
   .contact-data__messagefield {
     max-width: 500px;
   }
@@ -697,19 +707,33 @@ label#contact-data__message {
   }
 
   .first-block__aside{
-max-width:200px;
+    max-width:200px;
   }
-.aboutpreview-mobile{
-  width: 280px;
+
+  .aboutpreview-mobile{
+    width: 280px;
     height: 356px;
 }
+
+  .about-yourself{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
   .about-yourself__title {
     font-size: 14px;
   }
+
+  .about-yourself__button:not(:first-child){
+    margin-left:30px;
+  }
+
   .about-yourself__title:before {
     left: -15px;
-    top: -11px;
+    top: -12px;
   }
+
   .about-yourself__subtitle {
     font-size: 21px;
     line-height: 23px;
@@ -717,29 +741,37 @@ max-width:200px;
 
   .about-yourself__buttongroup{
     display:flex;
+    margin-right: 20px;
   }
-.aside-menu__text{
-  font-size:15px;
+
+  .aside-menu__text{
+    font-size:15px;
 }
-.aside-menu__link{
-  margin-left:30px;
+
+  .aside-menu__link{
+    margin-left:30px;
 }
+
   .usefull-skills__education {
     max-width: 250px;
     margin: 0 20px;
     padding: 2px 75px 0 30px
   }
+
   .usefull-skills__experience {
     max-width: 250px;
     margin: 0 20px;
     padding: 2px 75px 0 30px
   }
+
   .third-block {
     margin: 625px auto;
   }
+
   .contact-data__messagefield {
     max-width: 300px;
   }
+
   .usefull-skills__learningtime {
     font-size: 11px;
   }
@@ -747,17 +779,21 @@ max-width:200px;
   .usefull-skills__iconsblock:before{
     width:30px;
   }
+
   label#contact-data__mail {
     top: 70px;
     right: 188px;
   }
+
   .contact-data__inputgroup {
     flex-direction: column;
     align-items: center;
   }
+
   input#first-name {
     margin-bottom: 30px;
   }
+
   .contact-data__inbox.email {
     margin: 0;
   }
@@ -767,14 +803,17 @@ max-width:200px;
     padding: 0;
     margin-left: 7px;
   }
+
   .contact-data__sendform {
     margin-left: 28px;
   }
+
   .contact-data__inbox.error{
     margin-bottom: 20px;
   }
+
   label#contact-data__errormessage{
-    top: 357px
+    top: 357px;
     left: 6px;
 }
   }
