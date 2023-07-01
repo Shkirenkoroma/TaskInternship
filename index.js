@@ -52,7 +52,6 @@ function validation(form) {
   for (const input of allInputs) {
     function clearErrorField() {
       const labelError = document.querySelectorAll('.error-label');
-
       if (input.value !== '' || message.value !== '') {
         labelError.forEach(error => error.style.color = 'transparent')
         labelName.style.display = 'inline-block'
@@ -73,6 +72,10 @@ function validation(form) {
     input.addEventListener('input', clearErrorField)
     removeError(input, message)
     if (input.value == '') {
+      if(window.innerWidth < 576){
+        message.style.marginLeft = '14px';
+        errorMessage.style.marginLeft = '10px'
+      }
       input.style.border = 'transparent'
       labelName.style.display = 'none'
       labelMail.style.display = 'none'

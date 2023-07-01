@@ -207,6 +207,11 @@
   transform: scale(1.2);
   transition: all 500ms;
 }
+.error__labelmail{
+  position: absolute;
+  display:none;
+  color: red;
+}
 
 .aside-menu {
   position: relative;
@@ -550,6 +555,10 @@
   margin-left: 40px;
 }
 
+.contact-data__inbox.email{
+  position: relative;
+}
+
 .contact-data__input {
   width: 100%;
   max-width: 253px;
@@ -605,7 +614,7 @@ label#contact-data__name {
 label#contact-data__mail {
   position: absolute;
   top: -9px;
-  right: 200px;
+  right: 172px;
   padding: 0 8px;
   background-color: #fff;
 }
@@ -735,13 +744,28 @@ label#contact-data__message {
   .contact-data__messagefield {
     max-width: 500px;
   }
+
+  label#contact-data__mail{
+    right: 119px;
+  }
 }
 
 @media (max-width: 576px) {
+  label#contact-data__mail{
+    top: -10px;
+    right: 176px;
+  }
+
+  .container{
+    overflow:hidden;
+  }
+
   .social-links {
     display: none;
   }
-
+.first-block{
+  background-position: 60% 60%;
+}
   .first-block__aside{
     max-width:200px;
   }
@@ -774,12 +798,14 @@ label#contact-data__message {
     font-size: 21px;
     line-height: 23px;
   }
+  .error__labelmail{
+display:inline-block;
+  }
 
   .about-yourself__buttongroup{
     z-index:1200;
     display:flex;
     margin-right: 20px;
-    
   }
 
   .aside-menu__text{
@@ -805,18 +831,17 @@ label#contact-data__message {
     margin: 0 20px;
     padding: 2px 75px 0 30px
   }
-  
 
   .usefull-skills__title:before{
     top:-4px;
-    left:-43px;
+    left:-44px;
     width: 26px;
     height: 25px;
   }
 
   .usefull-skills__titlework:before{
     top: -5px;
-    right: 156px;
+    right: 142px;
     width: 26px;
     height: 25px;
   }
@@ -824,6 +849,12 @@ label#contact-data__message {
   .third-block {
     margin: 670px 0 200px 0;
   }
+.usefull-skills{
+  align-items: center;
+}
+.usefull-skills__university{
+  font-size:17px;
+}
 
   .contact-data__messagefield {
     max-width: 300px;
@@ -835,11 +866,6 @@ label#contact-data__message {
 
   .usefull-skills__iconsblock:before{
     width:30px;
-  }
-
-  label#contact-data__mail {
-    top: 70px;
-    right: 188px;
   }
 
   .contact-data__inputgroup {
@@ -856,9 +882,9 @@ label#contact-data__message {
   }
 
   .contact-data__textarea {
-    max-width: 268px;
-    padding: 0;
+    max-width: 240px;
     margin-left: 7px;
+    padding: 13px;
   }
 
   .contact-data__sendform {
@@ -870,8 +896,7 @@ label#contact-data__message {
   }
 
   label#contact-data__errormessage{
-    top: 357px;
+    top: 383px;
     left: 6px;
 }
   }
-}
