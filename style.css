@@ -106,6 +106,7 @@
 }
 
 .first-block__aside {
+  z-index:1;
   position: absolute;
   z-index: 1000;
   width: 100%;
@@ -184,6 +185,11 @@
   height: 2px;
   margin: 0 15px;
   background-color: #000;
+}
+
+  .about-yourself__buttongroup{
+    position: relative;
+    z-index:1500;
 }
 
 .social-links__list {
@@ -770,8 +776,10 @@ label#contact-data__message {
   }
 
   .about-yourself__buttongroup{
+    z-index:1200;
     display:flex;
     margin-right: 20px;
+    
   }
 
   .aside-menu__text{
