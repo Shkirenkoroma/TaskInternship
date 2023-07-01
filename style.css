@@ -767,6 +767,15 @@ label#contact-data__message {
     margin: 0 20px;
     padding: 2px 75px 0 30px
   }
+  
+  .usefull-skills__title{
+    position:relative;
+  }
+  
+  .usefull-skills__title:before{
+    left:-44px;
+    top:-4px;
+  }
 
   .third-block {
     margin: 625px auto;
