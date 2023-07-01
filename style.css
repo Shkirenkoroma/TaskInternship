@@ -187,9 +187,9 @@
   background-color: #000;
 }
 
-  .about-yourself__buttongroup{
-    position: relative;
-    z-index:1500;
+.about-yourself__buttongroup{
+  position: relative;
+  z-index:1500;
 }
 
 .social-links__list {
@@ -207,6 +207,7 @@
   transform: scale(1.2);
   transition: all 500ms;
 }
+
 .error__labelmail{
   position: absolute;
   display:none;
@@ -459,7 +460,6 @@
 
 .usefull-skills__blockexperience{
   position:relative;
-
 }
 
 .usefull-skills__title:before {
@@ -545,6 +545,7 @@
   transform: scale(1.1);
   transition: all 250ms;
 }
+
 .contact-data__inputgroup {
   position: relative;
   display: flex;
@@ -655,6 +656,7 @@ label#contact-data__message {
   .first-block {
     grid-template-columns: 20% 60% 20%;
   }
+
   .about-yourself__subtitle {
     font-size: 44px;
   }
@@ -685,8 +687,8 @@ label#contact-data__message {
   }
 
   .usefull-skills__education {
-    max-width: 600px;
     width: 100%;
+    max-width: 600px;
     margin: 0 auto;
   }
 
@@ -763,8 +765,9 @@ label#contact-data__message {
   .social-links {
     display: none;
   }
-.first-block{
-  background-position: 60% 60%;
+
+  .first-block{
+    background-position: 60% 60%;
 }
   .first-block__aside{
     max-width:200px;
@@ -798,8 +801,9 @@ label#contact-data__message {
     font-size: 21px;
     line-height: 23px;
   }
+
   .error__labelmail{
-display:inline-block;
+    display:inline-block;
   }
 
   .about-yourself__buttongroup{
@@ -899,4 +903,4 @@ display:inline-block;
     top: 383px;
     left: 6px;
 }
-  }
+}
