@@ -695,19 +695,44 @@ label#contact-data__message {
   .social-links {
     display: none;
   }
+
+  .first-block__aside{
+max-width:200px;
+  }
+.aboutpreview-mobile{
+  width: 280px;
+    height: 356px;
+}
   .about-yourself__title {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .about-yourself__title:before {
+    left: -15px;
+    top: -11px;
   }
   .about-yourself__subtitle {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 21px;
+    line-height: 23px;
   }
 
+  .about-yourself__buttongroup{
+    display:flex;
+  }
+.aside-menu__text{
+  font-size:15px;
+}
+.aside-menu__link{
+  margin-left:30px;
+}
   .usefull-skills__education {
     max-width: 250px;
+    margin: 0 20px;
+    padding: 2px 75px 0 30px
   }
   .usefull-skills__experience {
     max-width: 250px;
+    margin: 0 20px;
+    padding: 2px 75px 0 30px
   }
   .third-block {
     margin: 625px auto;
@@ -717,6 +742,10 @@ label#contact-data__message {
   }
   .usefull-skills__learningtime {
     font-size: 11px;
+  }
+
+  .usefull-skills__iconsblock:before{
+    width:30px;
   }
   label#contact-data__mail {
     top: 70px;
