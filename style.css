@@ -816,13 +816,13 @@ label#contact-data__message {
 
   .usefull-skills__titlework:before{
     top: -5px;
-    right: 152px;
+    right: 156px;
     width: 26px;
     height: 25px;
   }
 
   .third-block {
-    margin: 670px 0 70px 0;
+    margin: 670px 0 200px 0;
   }
 
   .contact-data__messagefield {
